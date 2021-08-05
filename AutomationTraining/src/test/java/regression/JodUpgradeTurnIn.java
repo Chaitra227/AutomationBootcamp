@@ -17,7 +17,7 @@ import utility.Test_POJO;
 public class JodUpgradeTurnIn extends InitializeBrowser {
 	
 	@Test(dataProvider="dataFile")
-	public void jodUpgrade(Test_POJO test) {
+	public void jodUpgradeTurn(Test_POJO test) {
 		LoginPage login=new LoginPage(driver);
 		login.signClick();
 		login.login(test.getUsername(), test.getPassword());

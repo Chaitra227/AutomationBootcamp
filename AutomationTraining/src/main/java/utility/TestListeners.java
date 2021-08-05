@@ -25,7 +25,7 @@ public class TestListeners implements ITestListener {
 	public ExtentTest extentTest;
 	public static WebDriver driver;
 	public static File file;
-	public static ExtentReports extent=ExtentManager.createInstance();
+	public static ExtentReports extent=ExtentReport.reportGeneration();
 	
 	//when multiple test cases are run in parallel, to keep it Thread safe using below code.
 	private static ThreadLocal<ExtentTest> thread= new ThreadLocal<ExtentTest> ();

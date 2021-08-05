@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\fh059178\eclipse-workspace\AutomationTraining\testng.xml</span>
+                    <span>C:\Users\fh059178\git\AutoTraining\AutomationTraining\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,29 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regression.JodUpgradePayoff" class="method navigator-link" hash-for-method="jodUpgrade(utility.Test_POJO@766a4535)">jodUpgrade(utility.Test_POJO@766a4535)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="regression.JodUpgradePayoff" class="method navigator-link" hash-for-method="jodUpgradePayoff(utility.Test_POJO@a33b4e3)">jodUpgradePayoff(utility.Test_POJO@a33b4e3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="regression.JodUpgradePayoff" class="method navigator-link" hash-for-method="jodUpgradePayoff(utility.Test_POJO@562457e1)">jodUpgradePayoff(utility.Test_POJO@562457e1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="regression.JodUpgradePayoff" class="method navigator-link" hash-for-method="jodUpgradePayoff(utility.Test_POJO@3971f0fe)">jodUpgradePayoff(utility.Test_POJO@3971f0fe)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,45 +146,91 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="jodUpgrade(utility.Test_POJO@766a4535)">
-                  </a> <!-- jodUpgrade(utility.Test_POJO@766a4535) -->
-                  <span class="method-name">jodUpgrade</span>
-                  <span class="parameters">(utility.Test_POJO@766a4535)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[@for=&apos;shipping-option-1&apos;]/div[1]/span&quot;}
+                  <a name="jodUpgradePayoff(utility.Test_POJO@a33b4e3)">
+                  </a> <!-- jodUpgradePayoff(utility.Test_POJO@a33b4e3) -->
+                  <span class="method-name">jodUpgradePayoff</span>
+                  <span class="parameters">(utility.Test_POJO@a33b4e3)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=92.0.4515.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;XD-10ISLA-21114&apos;, ip: &apos;10.236.234.171&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\fh059178\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 94ab0d3d8602e29eb462d92c5a2e1e24
-*** Element info: {Using=xpath, value=//label[@for=&apos;shipping-option-1&apos;]/div[1]/span}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\fh059178\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bba06552772eb8f1e7cd2b7d68b604e0
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.isSelected(Unknown Source)
-	at pages.DeliveryPage.overnightShipping(DeliveryPage.java:55)
-	at regression.JodUpgradePayoff.jodUpgrade(JodUpgradePayoff.java:52)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at pages.LoginPage.signClick(LoginPage.java:31)
+	at regression.JodUpgradePayoff.jodUpgradePayoff(JodUpgradePayoff.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">regression.JodUpgradePayoff</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="jodUpgradePayoff(utility.Test_POJO@562457e1)">
+                  </a> <!-- jodUpgradePayoff(utility.Test_POJO@562457e1) -->
+                  <span class="method-name">jodUpgradePayoff</span>
+                  <span class="parameters">(utility.Test_POJO@562457e1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at regression.JodUpgradePayoff.jodUpgradePayoff(JodUpgradePayoff.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jodUpgradePayoff(utility.Test_POJO@3971f0fe)">
+                  </a> <!-- jodUpgradePayoff(utility.Test_POJO@3971f0fe) -->
+                  <span class="method-name">jodUpgradePayoff</span>
+                  <span class="parameters">(utility.Test_POJO@3971f0fe)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=92.0.4515.107)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;XD-10ISLA-21114&apos;, ip: &apos;10.236.234.171&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\fh059178\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60727}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bba06552772eb8f1e7cd2b7d68b604e0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at pages.LoginPage.signClick(LoginPage.java:31)
+	at regression.JodUpgradePayoff.jodUpgradePayoff(JodUpgradePayoff.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\fh059178\eclipse-workspace\AutomationTraining\testng.xml</span>
+            <span class="header-content">C:\Users\fh059178\git\AutoTraining\AutomationTraining\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -173,6 +238,7 @@ Session ID: 94ab0d3d8602e29eb462d92c5a2e1e24
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
+    &lt;listener class-name=&quot;utility.Transform&quot;/&gt;
     &lt;listener class-name=&quot;utility.ListenerTest&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
@@ -205,7 +271,7 @@ Session ID: 94ab0d3d8602e29eb462d92c5a2e1e24
               <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">jodUpgrade</span>
+                <span class="method-in-group-name">jodUpgradePayoff</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -225,16 +291,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'jodUpgrade')
+data.setCell(0, 1, 'jodUpgradePayoff')
 data.setCell(0, 2, 'regression.JodUpgradePayoff')
-data.setCell(0, 3, 69631);
+data.setCell(0, 3, 20132);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'jodUpgradePayoff')
+data.setCell(1, 2, 'regression.JodUpgradePayoff')
+data.setCell(1, 3, 20089);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'jodUpgradePayoff')
+data.setCell(2, 2, 'regression.JodUpgradePayoff')
+data.setCell(2, 3, 17295);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,19 +320,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">jodUpgrade(utility.Test_POJO@766a4535)</span>
+              <span class="reporter-method-name">jodUpgradePayoff(utility.Test_POJO@562457e1)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Clicked on Sign In Link</span>
                 <span class="reporter-method-output">Sending username and password</span>
                 <span class="reporter-method-output">Selecting Upgrade from popup</span>
-                <span class="reporter-method-output">PTN Selector Page title verified</span>
-                <span class="reporter-method-output">Searching the PTN in search bar</span>
-                <span class="reporter-method-output">Selected iPhone12 Pro from Device Page</span>
-                <span class="reporter-method-output">Selected Lease Payoff termination option</span>
-                <span class="reporter-method-output">Selected IB contract term from PDP</span>
-                <span class="reporter-method-output">Selected Continue Button from PDP Page</span>
-                <span class="reporter-method-output">Add to cart button click in Upgrade flow</span>
-                <span class="reporter-method-output">Clicked on Checkout button in cart page</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -277,16 +343,28 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">regression.JodUpgradePayoff</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">initialize(org.testng.TestRunner@a96d56c)</span>
+              <div class="configuration-test before">
+                <span class="method-name">initialize(org.testng.TestRunner@4b65d9f4)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">jodUpgradePayoff(utility.Test_POJO@562457e1)</span>
+                <span class="method-start">10655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">jodUpgradePayoff(utility.Test_POJO@3971f0fe)</span>
+                <span class="method-start">28142 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">jodUpgrade(utility.Test_POJO@766a4535)</span>
-                <span class="method-start">10390 ms</span>
+                <span class="method-name">jodUpgradePayoff(utility.Test_POJO@a33b4e3)</span>
+                <span class="method-start">48470 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">68803 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

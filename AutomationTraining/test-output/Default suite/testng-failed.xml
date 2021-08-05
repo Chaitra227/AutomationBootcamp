@@ -5,7 +5,8 @@
     <classes>
       <class name="regression.JodUpgradePayoff">
         <methods>
-          <include name="jodUpgrade" invocation-numbers="0"/>
+          <include name="jodUpgradePayoff" invocation-numbers="0"/>
+          <include name="close"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- regression.JodUpgradePayoff -->
